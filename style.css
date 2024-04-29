@@ -11,15 +11,96 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
 }
-.header{
-    padding: 15px;
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 3px 15px 0px 15px;
+    align-items: center;
+    justify-items: center;
+    max-height: 50px;
+
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#logo {
+    height: 45px;
+}
+
+#profileImage {
+    height: 80px;
+    grid-column: 1 /2;
+    grid-row: 1 / 3;
+    margin: 0px 25px;
+}
+
+#profileInfo {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-row: 1fr 2fr;
+    align-items: center;
+    position: relative;
+
+}
+
+#profileInfo p {
+    font-size: smaller;
+    font-weight: 600;
+    grid-column: 2 /3;
+    grid-row: 2 / 3;
+    position: absolute;
+    bottom: 30px;
+}
+
+#profileInfo h4 {
+    font-size: larger;
+    grid-column: 2 /3;
+    grid-row: 2 / 3;
+    position: absolute;
+
 }
 
 .search {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 6fr 0.5fr 1fr 1.5fr;
+    align-items: center;
+    /* justify-items: center; */
+    padding: 0rem 2rem;
+    margin: 0px;
 
 }
+
+.searchFieldContainer {
+    width: 80%;
+}
+
+#searchField {
+    width: 100%;
+    height: 25px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.buttons button {
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #1992d4;
+    height: 35px;
+    width: 95px;
+    border-radius: 20px;
+    margin: 0px 5px;
+}
+
 .sidebar {
     background-color: #1992d4;
     grid-row: 1 / 3;
@@ -47,8 +128,8 @@ body {
     background-color: #e2e8f0;
     grid-column: 2 /3;
 
-    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(117, 117, 117, 0.45);
-    -moz-box-shadow: inset 0px 3px 5px 0px rgba(117, 117, 117, 0.45);
-    box-shadow: inset 0px 3px 5px 0px rgba(117, 117, 117, 0.45);
+    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(117, 117, 117, 0.35);
+    -moz-box-shadow: inset 0px 3px 5px 0px rgba(117, 117, 117, 0.35);
+    box-shadow: inset 0px 3px 5px 0px rgba(117, 117, 117, 0.35);
 
 }
